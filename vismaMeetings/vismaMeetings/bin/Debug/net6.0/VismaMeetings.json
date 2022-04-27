@@ -1,0 +1,30 @@
+{
+  "listMeetings": [
+    {
+      "ParticipantsList": [
+        "Jonas Added on : 2022-04-27 20:29:26 ",
+        "Petras Added on : 2022-04-27 20:40:04"
+      ],
+      "Name": ".Net meet",
+      "Description": "Jono .NET meetas",
+      "ResponsiblePerson": "Jonas",
+      "Category": "CodeMonkey",
+      "Type": "Live",
+      "StartDate": "2022-05-01T15:00:00",
+      "EndDate": "2022-05-01T17:00:00"
+    },
+    {
+      "ParticipantsList": [
+        "Jonas Added on : 2022-04-27 20:36:12 ",
+        "Petras Added on : 2022-04-27 20:40:28"
+      ],
+      "Name": "Intersection Test case",
+      "Description": "Intersection test case",
+      "ResponsiblePerson": "Jonas",
+      "Category": "CodeMonkey",
+      "Type": "Live",
+      "StartDate": "2022-05-01T16:00:00",
+      "EndDate": "2022-05-01T16:45:00"
+    }
+  ]
+}

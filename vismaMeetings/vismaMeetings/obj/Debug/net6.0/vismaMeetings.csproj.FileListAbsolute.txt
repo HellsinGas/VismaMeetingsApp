@@ -1,0 +1,15 @@
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\bin\Debug\net6.0\vismaMeetings.exe
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\bin\Debug\net6.0\vismaMeetings.deps.json
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\bin\Debug\net6.0\vismaMeetings.runtimeconfig.json
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\bin\Debug\net6.0\vismaMeetings.dll
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\bin\Debug\net6.0\vismaMeetings.pdb
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.csproj.AssemblyReference.cache
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.AssemblyInfoInputs.cache
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.AssemblyInfo.cs
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.csproj.CoreCompileInputs.cache
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.dll
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\refint\vismaMeetings.dll
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.pdb
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\vismaMeetings.genruntimeconfig.cache
+C:\Users\HellsinGas\source\repos\vismaMeetings\vismaMeetings\obj\Debug\net6.0\ref\vismaMeetings.dll
