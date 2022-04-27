@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V0TyghYhK9KuIWajqWVqBhkA619sCCfxJ3aJwlonbBe8+wGNMg5smeC3ahiSAn+dclKjDSPtJf69CDjq3I6EtA==",
+  "dgSpecHash": "1yqShPlK7LnVgLLC15ylI9OOTnonz4UKALRLRs+/Lxtmfk4+EmwmON8aTH68ftEsztvedl86M8EUnqEFOjG8SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj",
+  "projectFilePath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HellsinGas\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\HellsinGas\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

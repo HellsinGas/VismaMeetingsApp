@@ -25,6 +25,18 @@
       "Type": "Live",
       "StartDate": "2022-05-01T16:00:00",
       "EndDate": "2022-05-01T16:45:00"
+    },
+    {
+      "ParticipantsList": [
+        "Jonas Added on : 2022-04-27 23:15:05 "
+      ],
+      "Name": "Delete ME2",
+      "Description": "Delete Me2",
+      "ResponsiblePerson": "Jonas",
+      "Category": "Short",
+      "Type": "Live",
+      "StartDate": "2022-05-01T15:45:00",
+      "EndDate": "2022-05-01T16:00:00"
     }
   ]
 }

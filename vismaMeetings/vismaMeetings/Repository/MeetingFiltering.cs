@@ -9,16 +9,21 @@ namespace vismaMeetings.Repository
 {
     public class MeetingFiltering
     {
-        
 
+        void Stars()
+        {
+            Console.WriteLine("*****************************************************************");
+        }
         public void FilteringMenu()
         {
+            
             JsonMarshalling jsonMarshalling = new JsonMarshalling();
             ListOfMeetingWithParticipants listOfMeetingsWrapper = new ListOfMeetingWithParticipants();
             listOfMeetingsWrapper.listMeetings = jsonMarshalling.DeSerialization(listOfMeetingsWrapper);
             bool exit = false;
             while (!exit)
             {
+                Stars();
                 Console.WriteLine("1. Display all meetings");
                 Console.WriteLine("2. Filter by Description");
                 Console.WriteLine("3. Filter by Category");
@@ -110,6 +115,7 @@ namespace vismaMeetings.Repository
                     FilterbyDateBetween(listMeetings);
                     return;
                 }
+                Console.WriteLine("Bad input.");
             }
 
         }
@@ -219,6 +225,7 @@ namespace vismaMeetings.Repository
         {
             foreach(MeetingWithParticipants meeting in listMeetings)
             {
+                Stars();
                 Console.WriteLine($"Meeting Title : {meeting.Name}");
                 Console.WriteLine($"Meeting Description : {meeting.Description}");
                 Console.WriteLine($"Meeting Description : {meeting.ResponsiblePerson}");
@@ -240,6 +247,7 @@ namespace vismaMeetings.Repository
             JsonMarshalling jsonMarshalling = new JsonMarshalling();
             List<MeetingWithParticipants> filteredList = new List<MeetingWithParticipants>();
             ListOfMeetingWithParticipants listOfMeetingsWrapper = new ListOfMeetingWithParticipants();
+
             listOfMeetingsWrapper.listMeetings = jsonMarshalling.DeSerialization(listOfMeetingsWrapper);
             foreach(MeetingWithParticipants meeting in listOfMeetingsWrapper.listMeetings)
             {

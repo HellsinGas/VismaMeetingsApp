@@ -32,8 +32,8 @@ bool exit = false;
 
 Console.WriteLine("Hello, To start using the program, you must first log in...");
 Console.WriteLine("Enter your name...(Case insensitive, A-Z,no simbols or figures");
-userName = Console.ReadLine();
-Console.WriteLine(userName);
+userName = validation.AzValidation();
+Console.WriteLine($"You are logged in as : {userName}");
 while (!exit)
 {
     Stars();

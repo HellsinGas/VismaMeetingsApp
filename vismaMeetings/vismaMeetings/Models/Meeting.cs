@@ -43,8 +43,8 @@
             Console.WriteLine("Enter Description of the meeting");
             meeting.Description = Console.ReadLine();
 
-            Console.WriteLine("Enter person responsible for the meeting");
-            meeting.ResponsiblePerson = Console.ReadLine().Trim();
+            Console.WriteLine("Enter person responsible for the meeting, A-z Only");
+            meeting.ResponsiblePerson = validationClass.AzValidation();
 
             Console.WriteLine("Select Category");
             meeting.Category = CategorySelection();

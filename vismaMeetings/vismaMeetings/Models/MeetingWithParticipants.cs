@@ -42,12 +42,12 @@ namespace vismaMeetings.Models
         public List<MeetingWithParticipants> AddorRemoveParticipant(List<MeetingWithParticipants> meetingWithParticipants, bool removeOrAdd)
         {
             ValidationClass validationClass = new ValidationClass();            
-            Console.WriteLine("Into which meeting do you wish to add a person");            
+            Console.WriteLine("Into which meeting do you wish to add a person, Write full meeting name (Case insensitive)");            
             bool validation = false;
             while (!validation)
             {
                 ShowMeetingTitles(meetingWithParticipants);
-                string input = Console.ReadLine();
+                string input = validationClass.AzValidation();
                 int count = 0;
                 foreach (MeetingWithParticipants m in meetingWithParticipants)
                 {
@@ -111,7 +111,7 @@ namespace vismaMeetings.Models
         {
             ValidationClass validationClass = new ValidationClass();
             Console.WriteLine("Enter the name of person you wish to add :");
-            string input = Console.ReadLine();
+            string input = validationClass.AzValidation();
             foreach(string participant in m.ParticipantsList)
             {
                 if (validationClass.CheckIfStringContains(participant,input))
@@ -126,7 +126,7 @@ namespace vismaMeetings.Models
             return m;
         }
 
-        private void CheckIntersectionWithAnotherMeeting(string name,MeetingWithParticipants meeting1 )
+        private void CheckIntersectionWithAnotherMeeting(string name,MeetingWithParticipants meetingParticipantIsBeingPlacedInto )
         {
             MeetingFiltering meetingFiltering = new MeetingFiltering();
             List<MeetingWithParticipants> meetingWithParticipants = new List<MeetingWithParticipants>();
@@ -135,7 +135,7 @@ namespace vismaMeetings.Models
 
             foreach(MeetingWithParticipants meetingWithParticipant in meetingWithParticipants)
             {
-                if (meeting1.StartDate.Ticks > meetingWithParticipant.StartDate.Ticks && meeting1.StartDate.Ticks < meetingWithParticipant.EndDate.Ticks)
+                if (meetingParticipantIsBeingPlacedInto.StartDate.Ticks > meetingWithParticipant.StartDate.Ticks && meetingParticipantIsBeingPlacedInto.StartDate.Ticks < meetingWithParticipant.EndDate.Ticks)
                 {
                     Console.WriteLine($"Person whos beeing added intersects with meeting:{meetingWithParticipant.Name}");
                 }
@@ -155,7 +155,7 @@ namespace vismaMeetings.Models
         {
             ValidationClass validationClass = new ValidationClass();
 
-            Console.WriteLine("Which Meeting do you wish to delete?");
+            Console.WriteLine("Which Meeting do you wish to delete? (Exact match, Case insensitive) ");
             bool validation = false;
             while (!validation)
             {
@@ -165,19 +165,10 @@ namespace vismaMeetings.Models
                 {                  
                     if (validationClass.StringEqualityValidation(input, m.Name))
                     {
-                        if (validationClass.StringEqualityValidation(username, m.ResponsiblePerson))
-                        {
-                            listOfMeetings.listMeetings.Remove(m);
-                            validation=true;
-                            break;
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Only person responsible for the meeting can delete it. Responsible person :{m.ResponsiblePerson}");
-                            Console.WriteLine("Enter anything to return to menu");
-                            Console.ReadLine();
-                            return listOfMeetings;
-                        }
+
+                        listOfMeetings.listMeetings = CheckForResponsibleBeforeDeletion(username, m, listOfMeetings.listMeetings);
+                        validation = true;
+                        break;
                             
 
                     }
@@ -190,6 +181,25 @@ namespace vismaMeetings.Models
             return listOfMeetings;
 
         }
+
+        private List<MeetingWithParticipants> CheckForResponsibleBeforeDeletion(string username, MeetingWithParticipants m, List<MeetingWithParticipants> listMeetings)
+        {
+            ValidationClass validationClass = new ValidationClass();
+            if (validationClass.StringEqualityValidation(username, m.ResponsiblePerson))
+            {
+                listMeetings.Remove(m);                
+            }
+            else
+            {
+                Console.WriteLine($"Only person responsible for the meeting can delete it. Responsible person :{m.ResponsiblePerson}");
+                Console.WriteLine("Enter anything to return to menu");
+                Console.ReadLine();
+                return listMeetings;
+            }
+            return listMeetings;
+        }
+
+        
 
         private void ShowMeetingTitles(List<MeetingWithParticipants> listMeetings)
         {

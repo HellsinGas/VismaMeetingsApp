@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
+      "projectUniqueName": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
       "projectName": "vismaMeetings",
-      "projectPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
+      "projectPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
       "packagesPath": "C:\\Users\\HellsinGas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\obj\\",
+      "outputPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

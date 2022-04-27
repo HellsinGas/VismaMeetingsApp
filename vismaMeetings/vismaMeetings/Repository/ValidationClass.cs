@@ -53,5 +53,22 @@ namespace vismaMeetings.Repository
             return dateValue;
         }
 
+        public string? AzValidation()
+        {
+            string? input;
+            while (true)
+            {
+                input = Console.ReadLine();
+                if (Regex.IsMatch(input, @"^[a-zA-Z]+$"))
+                    break;
+                else
+                    Console.WriteLine("Invalid input please use only letters A-z");
+
+            }
+
+            
+            return input;
+        }
+
     }
 }

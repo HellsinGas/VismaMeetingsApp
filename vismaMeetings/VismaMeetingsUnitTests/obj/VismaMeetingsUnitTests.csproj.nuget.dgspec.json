@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj": {}
+    "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj": {
+    "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj",
+        "projectUniqueName": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj",
         "projectName": "VismaMeetingsUnitTests",
-        "projectPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj",
+        "projectPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\VismaMeetingsUnitTests\\VismaMeetingsUnitTests.csproj",
         "packagesPath": "C:\\Users\\HellsinGas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\VismaMeetingsUnitTests\\obj\\",
+        "outputPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\VismaMeetingsUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj": {
-                "projectPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj"
+              "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj": {
+                "projectPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj": {
+    "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
+        "projectUniqueName": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
         "projectName": "vismaMeetings",
-        "projectPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
+        "projectPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\vismaMeetings.csproj",
         "packagesPath": "C:\\Users\\HellsinGas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HellsinGas\\source\\repos\\vismaMeetings\\vismaMeetings\\obj\\",
+        "outputPath": "D:\\GITHUBAS\\Visma\\VismaMeetingsApp\\vismaMeetings\\vismaMeetings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
