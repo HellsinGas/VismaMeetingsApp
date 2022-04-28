@@ -24,9 +24,12 @@ namespace vismaMeetings.Repository
 
         public List<MeetingWithParticipants> DeSerialization(ListOfMeetingWithParticipants listOfMeetings)
         {
-            string fileName = "VismaMeetings.json";            
-            string jsonString = File.ReadAllText(fileName);
-            listOfMeetings = JsonSerializer.Deserialize<ListOfMeetingWithParticipants>(jsonString)!;          
+            string fileName = "VismaMeetings.json";
+            if (File.Exists(fileName))
+            {
+                string jsonString = File.ReadAllText(fileName);
+                listOfMeetings = JsonSerializer.Deserialize<ListOfMeetingWithParticipants>(jsonString)!;
+            }          
                                
 
             return listOfMeetings.listMeetings;  

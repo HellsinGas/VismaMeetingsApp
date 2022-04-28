@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using vismaMeetings.Models;
 using vismaMeetings.Repository;
-//using vismaMeetings.Repository;
+
+
 string? userName;
+
 
 
 List<Meeting> meetingList = new List<Meeting>();
@@ -48,6 +50,10 @@ while (!exit)
     if(input == 1)
     {
         meeting = meeting.CreateMeeting(userName);
+        if(listOfMeetingWithParticipants != null)
+        {
+            listOfMeetingWithParticipants.listMeetings = new List<MeetingWithParticipants>();
+        }
         listOfMeetingWithParticipants.listMeetings.Add(participants.OnMeetingCreation(meeting));
 
         marshalling.Serialization(listOfMeetingWithParticipants);
@@ -88,24 +94,6 @@ void Stars()
 {
     Console.WriteLine("*****************************************************************");
 }
-/*foreach (MeetingWithParticipants m in participantsList)
-{
-    Console.WriteLine($"Meeting Title : {participants.Name}");
-    Console.WriteLine($"Meeting Description : {participants.Description}");
-    Console.WriteLine($"Meeting Category : {participants.Category}");
-    Console.WriteLine($"Meeting Type : {participants.Type}");
-    Console.WriteLine($"Meeting StartDate : {participants.StartDate}");
-    Console.WriteLine($"Meeting EndDate : {participants.EndDate}");
-    foreach (string? e in m.ParticipantsList)
-    {
-        Console.Write($"1. {e}, ");
-    }
-}*/
-//foreach (MeetingWithParticipants m in participantsList)
-//{
-//meetingWithParticipantsList = participantsList;
-
-//}
 
 
 

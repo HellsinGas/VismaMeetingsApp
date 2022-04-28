@@ -14,11 +14,7 @@ namespace vismaMeetings.Models
         
         public List<string?>? ParticipantsList { get; set; }
 
-        /* public Participants(List<string?>? participantsList)
-         {
-             ParticipantsList = participantsList;
-        }*/       
-
+              
        
         public MeetingWithParticipants()
         {
